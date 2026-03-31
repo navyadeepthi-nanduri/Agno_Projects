@@ -1,0 +1,4 @@
+agno
+rich
+python-dotenv
+google-generativeai

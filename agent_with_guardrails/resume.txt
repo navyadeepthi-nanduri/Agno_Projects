@@ -1,0 +1,15 @@
+Name: Ananya Reddy  
+Email: ananya@gmail.com  
+Phone: 9876543210  
+
+Objective:
+Motivated and detail-oriented Computer Science graduate with strong knowledge in Python, SQL, and data analysis. Seeking an entry-level data analyst role to apply technical and analytical skills.
+
+Skills:
+Python, SQL, Excel, Data Visualization, Pandas, NumPy
+
+Education:
+B.Tech in Computer Science from JNTU Hyderabad (2024)
+
+Projects:
+Developed a data analysis project using Python and Pandas to clean and analyze sales data and generate reports.

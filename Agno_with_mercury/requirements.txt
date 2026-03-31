@@ -1,0 +1,5 @@
+agno==2.5.10
+ddgs==9.11.4
+openai==2.29.0
+python-dotenv==1.2.2
+yfinance==1.2.0

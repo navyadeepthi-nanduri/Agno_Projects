@@ -1,0 +1,4 @@
+agno
+groq
+python-dotenv
+fastapi

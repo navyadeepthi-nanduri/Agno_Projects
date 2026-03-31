@@ -1,0 +1,6 @@
+    agno
+    duckduckgo-search
+    lancedb
+    pypdf
+    openai
+    sentence-transformersB
