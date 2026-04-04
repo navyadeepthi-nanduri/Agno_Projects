@@ -1,0 +1,5 @@
+# Google Gemma 4 Multimodal Demo using NVIDIA Hosted API
+
+# This prototype demonstrates the usage of the Google Gemma 4 multimodal model through the NVIDIA hosted API in Google Colab, where an uploaded image is encoded and sent along with a text prompt for multimodal inference. The sample was created as part of the SIML prototype to validate secure API key handling, multimodal request construction, and response testing in both streaming and non-streaming modes.
+
+# Colab Reference: https://colab.research.google.com/drive/1T1vDGiY6Vcg2r7wfFfRQCuHnzPt9Kqmf#scrollTo=5JM7rt3_-Hsh
