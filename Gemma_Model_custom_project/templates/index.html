@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemma Multimodal Chatbot</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand-row">
+        <div class="brand-icon">🤖</div>
+        <div>
+          <h1>Gemma Multimodal Chatbot</h1>
+          <p>Text • Image • Audio • Multimodal • FastAPI + OpenRouter + Groq</p>
+        </div>
+      </div>
+      <button id="clearChatBtn" class="ghost-btn">Clear Chat</button>
+    </header>
+
+    <!-- Chat Area -->
+    <main class="chat-wrapper">
+      <section id="chatMessages" class="chat-messages">
+        <div class="empty-state" id="emptyState">
+          <div class="empty-icon">✨</div>
+          <h2>Start a multimodal conversation</h2>
+          <p>
+            Type a message, optionally attach an image and/or audio, then click Send.
+          </p>
+          <div class="empty-hints">
+            <span>Text only</span>
+            <span>Image only</span>
+            <span>Audio only</span>
+            <span>Text + Image + Audio</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Last Request Details -->
+      <section id="detailsPanel" class="details-panel hidden">
+        <h3>ℹ️ Last Request Details</h3>
+        <div id="detailsContent" class="details-content"></div>
+      </section>
+    </main>
+
+    <!-- Composer -->
+    <footer class="composer-wrapper">
+      <div class="composer-card">
+        <div class="composer-top">
+          <textarea
+            id="messageInput"
+            placeholder="Ask anything... You can also attach image and/or audio."
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="composer-bottom">
+          <div class="attachment-group">
+            <label class="attach-btn" for="imageInput" title="Attach image">
+              🖼️ <span>Image</span>
+            </label>
+            <input
+              type="file"
+              id="imageInput"
+              accept=".jpg,.jpeg,.png,.webp"
+              hidden
+            />
+
+            <label class="attach-btn" for="audioInput" title="Attach audio">
+              🎤 <span>Audio</span>
+            </label>
+            <input
+              type="file"
+              id="audioInput"
+              accept=".wav,.mp3,.m4a,.webm"
+              hidden
+            />
+          </div>
+
+          <button id="sendBtn" class="send-btn">🚀 Send</button>
+        </div>
+
+        <!-- Attachment Preview -->
+        <div id="attachmentPreview" class="attachment-preview hidden">
+          <div id="imagePreviewRow" class="file-chip hidden">
+            <span>🖼️</span>
+            <span id="imageFileName">No image selected</span>
+            <button id="removeImageBtn" type="button" class="remove-chip-btn">✕</button>
+          </div>
+
+          <div id="audioPreviewRow" class="file-chip hidden">
+            <span>🎤</span>
+            <span id="audioFileName">No audio selected</span>
+            <button id="removeAudioBtn" type="button" class="remove-chip-btn">✕</button>
+          </div>
+        </div>
+
+        <div class="composer-tip">
+          Supports text only, image only, audio only, or any combination.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
